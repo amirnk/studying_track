@@ -63,8 +63,10 @@ while page_number != 1000000:
                           format(page_number))
                 continue
         except ValueError:
-
-            print("is not a valid page number")
+            if page_number0 == 'run':
+                print('welcome back !')
+            else:
+                print("is not a valid page number")
             continue
 
     if page_number == 99999:
