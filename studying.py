@@ -44,6 +44,13 @@ def benvisesh():
 while page_number != 1000000:
 
     while True:
+        page_number0 = input("Page >>")
+        if page_number0 == 'pause':
+            while True:
+                page_number0 = input("Page >>")
+                if page_number0 == 'run':
+                    first_time = time.time()
+                    break 
         try:
             page_number = int(input("Page >>"))
             if page_number not in page_list and page_number != 0:
